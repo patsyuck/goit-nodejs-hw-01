@@ -1,0 +1,1 @@
+const contactsFunctions = require('./contacts')
