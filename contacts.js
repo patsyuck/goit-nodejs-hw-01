@@ -1,6 +1,5 @@
 const fs = require('fs/promises')
 const path = require('path')
-//const {v4} = require('uuid')
 const contactsPath = path.join(__dirname, 'db/contact.json')
 
 async function listContacts() {
@@ -56,13 +55,11 @@ async function addContact(name, email, phone) {
         const idx = Math.max(...result.map(item => item.id)) + 1 //?
         const newContact = {
             'id': idx,
-            //'id': v4(),
             'name': name,
             'email': email,
             'phone': phone
         }
         result[result.length] = newContact
-        //result.push(newContact)
         const newContacts = JSON.stringify(result)
         await fs.writeFile(contactsPath, newContacts)
         console.log('New contact added:')
