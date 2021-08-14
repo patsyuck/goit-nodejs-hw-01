@@ -1,7 +1,13 @@
-const contactsFunctions = require('./contacts')
+const contactsFunctions = require('./contacts');
 
-//contactsFunctions.getContactById(1)
-//contactsFunctions.addContact('Mango', 'mango@gmail.com', '322-22-22')
-//contactsFunctions.removeContact(21)
-
-//contactsFunctions.listContacts()
+/*(async() => {
+    try {
+        //await contactsFunctions.getContactById(3)
+        //await contactsFunctions.addContact('Mango', 'mango@gmail.com', '322-22-22')
+        //await contactsFunctions.removeContact(14)
+        //await contactsFunctions.listContacts()
+    }
+    catch (error) {
+        console.log(error)
+    }
+})()*/
